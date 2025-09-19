@@ -1,0 +1,56 @@
+body {
+    font-size: 20px;
+}
+
+#content {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+h1, h4 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    padding-top: 50px;
+    letter-spacing: 2px;
+}
+
+h4 {
+    margin-top: -5px;
+    margin-bottom: -5px;
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    color: #035f9c;
+}
+
+p, li {
+    line-height: 1.6;
+}
+
+hr {
+    background-color: #ccc;
+    border: none;
+    height: 1px;
+}
+
+#page-text {
+    margin-top: 60px;
+}
+
+#italic-text {
+    font-style: italic;
+}
+
+li {
+    padding-bottom: 20px;
+}
+
+img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
