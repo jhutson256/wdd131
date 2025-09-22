@@ -37,7 +37,7 @@ selectElem.addEventListener('change', function(){
 })
 
 const newPara = document.createElement('p');
-newPara.innerText = "added text here"
+newPara.innerText = "added text here";
 
-const topics = document.querySelector('#topics')
+const topics = document.querySelector('#topics');
 topics.appendChild(newPara);
