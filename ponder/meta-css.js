@@ -41,3 +41,9 @@ newPara.innerText = "added text here";
 
 const topics = document.querySelector('#topics');
 topics.appendChild(newPara);
+
+const image = document.querySelector('img');
+image.setAttribute('src', 'images/ponder_week1.jpg');
+image.setAttribute('alt', 'new logo with black background');
+
+document.body.className = 'blue';
