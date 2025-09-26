@@ -12,8 +12,8 @@ function changeTheme() {
         document.querySelector('h4').style.color = 'lightblue';
         // code for changes to colors and logo
     } else {
-        logo.setAttribute('src', 'brightspotcdn.byui.png');
-        logo.setAttribute('alt', 'BYU Idaho logo');
+        logo.setAttribute('src', 'byui-logo-blue.webp');
+        logo.setAttribute('alt', 'BYU Idaho blue logo');
         document.body.className = 'none';
         document.querySelector('h4').style.color = '#035f9c';
         // code for changes to colors and logo
