@@ -24,9 +24,15 @@ h1 {
     padding-bottom: 5px;
 }
 nav a {
+    color: white;
+    padding: 10px;
+    font-size: 1.15em;
+    display: block;
+}
+.hide {
     display: none;
 }
-img {
+#main-grid img {
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -34,19 +40,44 @@ img {
     box-shadow: 5px 5px 10px black;
     margin-bottom: 15px;
 }
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+    position: fixed;
+}
+.close-viewer {
+    position: absolute;
+    top: 17vh;
+    right: 1vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+    border: none;
+}
 footer {
     padding: 5px;
 }
 
 
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 624px) {
     #main-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         align-items: center;
         row-gap: 15px;
+    }
+    .close-viewer {
+        right: 9vh;
+    }
+    dialog img {
+        width: 75%;
     }
 }
 
@@ -64,5 +95,16 @@ footer {
         display: inline;
         color: white;
         margin-right: 25px;
+    }
+    .hide {
+        display: block;
+    }
+    dialog img {
+        width: 55%;
+        margin: 15vh auto;
+    }
+    .close-viewer {
+        position: absolute;
+        right: 25vh;
     }
 }
