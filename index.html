@@ -5,20 +5,44 @@
     <meta name="description" content="College projects home page.">
     <meta name="author" content="Jacob Hutson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="portal.css">
+    <script src="portal.js" defer></script>
     <title>Portal Page - WDD 131</title>
-    <link rel="stylesheet" href="">
 </head>
 <body>
     <!-- https://jhutson256.github.io/wdd131/ -->
     <header>
-
+        <h1>WDD 131 Portal Page</h1>
+        <h2>Assignments</h2>
+        <button class="menu-btn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+        <nav class="hide">
+            <a href="blog/index.html">Blog</a>
+            <a href="coolpics/index.html">Cool Pics</a>
+            <a href="mission/index.html">Mission Statement</a>
+        </nav>
     </header>
     <main>
-        <h1 id="my-name">Jacob Paul Hutson</h1>
-        <p>I like football</p>
+        <h2 id="name"></h2>
+        <img src="../../Spring2025/wdd130/imageshp/website_photo2.jpg" alt="Jacob Hutson in Billings, Montana">
+        <article>
+            <h3>Hobbies</h3>
+            <ul id="my-list"></ul>
+        </article>
     </main>
     <footer>
-
+        <h2>Ponders</h2>
+        <ul>
+            <li><a href="ponder/dom-theme.html">DOM</a></li>
+            <li><a href="ponder/meta-css.html">Meta</a></li>
+            <li><a href="ponder/modal.html">Modal</a></li>
+            <li><a href="ponder/movie.html">Movie</a></li>
+            <li><a href="ponder/responsive.html">Responsive</a></li>
+        </ul>
     </footer>
 </body>
 </html>
