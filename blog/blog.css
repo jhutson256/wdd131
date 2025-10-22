@@ -21,13 +21,11 @@ h1 {
     color: darkred;
     padding: 20px;
 }
-main {
-    border-top: 2px solid #EFC69B;
-    margin-top: 50px;
-}
 .book-review {
     display: grid;
-    grid-template-columns: 1fr 125px;
+    grid-template-columns: 1fr 150px;
+    border-top: 2px solid #EFC69B;
+    margin-top: 50px;
 }
 .details {
     text-align: right;
@@ -59,7 +57,9 @@ footer {
     .book-review {
         max-width: 1000px;
         margin: 0 auto;
-        grid-template-columns: 150px 1fr;
+        margin-top: 50px;
+        border-top: none;
+        grid-template-columns: 200px 1fr;
     }
     .details {
         border-right: 2px solid #EFC69B;
