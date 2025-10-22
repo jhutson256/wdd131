@@ -4,7 +4,7 @@ const steps = ['one', 'two', 'three'];
 
 steps.forEach(function(item){
     console.log(item);
-})
+});
 
 let myList = document.querySelector('#myList');
 
@@ -70,7 +70,7 @@ const words = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
 
 const shortWords = words.filter(function(word){
     return word.length < 6;
-})
+});
 
 console.log(shortWords);
 
@@ -80,7 +80,7 @@ const students = [
     {last: 'Tanda', first: 'Tamanda'}
 ];
 
-let container = document.querySelector('#studentContainer')
+let container = document.querySelector('#studentContainer');
 
 students.forEach(function(item){
     let name = document.createElement('div');
@@ -92,4 +92,4 @@ students.forEach(function(item){
 
     name.innerHTML = html;
     container.appendChild(name);
-})
+});
