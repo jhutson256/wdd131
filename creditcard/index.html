@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacob Hutson">
+    <meta name="description" content="A website for credit card payment">
+    <title>Payment - Credit Card Form</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="creditcard.css">
+    <script src="creditcard.js" defer></script>
+</head>
+<body>
+    <section class="errors"></section>
+    <form id="credit-card" action="#" method="get">
+        <div id="credit-card-front">
+            <p id="total">TOTAL: $199</p>
+            <p id="emoji">💳</p>
+            <div id="card-number-container">
+                <label for="card-number">CARD NUMBER</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9101 1020" required>
+            </div>
+            <div id="card-holder-container">
+                <label for="card-holder">CARD HOLDER</label>
+                <input type="text" id="card-holder" name="card-holder" placeholder="John Doe" required>
+            </div>
+            <div id="card-expiration">
+                <label for="expiration-date">EXPIRATION</label>
+                <input type="text" id="month" name="expiration-month" placeholder="MM" aria-labelledby="expiration-date" required>
+                <input type="text" id="year" name="expiration-year" placeholder="YY" aria-labelledby="expiration-date" required>
+            </div>
+        </div>
+        <div id="credit-card-back">
+            <div id="card-strip"></div>
+            <div id="security-code">
+                <label for="cvc-cvv">CVC/CVV</label>
+                <input type="text" id="cvc-cvv" name="cvc-cvv" placeholder="xxx" required>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
