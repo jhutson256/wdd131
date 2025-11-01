@@ -18,11 +18,12 @@ h1 {
 }
 nav {
     padding-bottom: 15px;
+    line-height: 2em;
 }
 nav a {
     color: white;
     text-decoration: none;
-    padding: 25px;
+    padding-right: 25px;
 }
 nav a:hover {
     color: lightgray;
@@ -80,6 +81,7 @@ footer {
     text-align: center;
     padding-bottom: 15px;
     margin-top: 25px;
+    line-height: 2em;
 }
 footer h2 {
     padding: 25px;
