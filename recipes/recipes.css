@@ -1,15 +1,18 @@
-main {
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+body {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 .title {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     margin-top: 50px;
 }
 .title h1 {
-    font-size: 3em;
+    font-size: 6em;
+    font-family: "Amatic SC", Arial;
+    margin: 0px;
 }
 #title-img {
     width: 125px;
@@ -26,6 +29,8 @@ main {
 #search-box {
     flex: 1 1 200px;
     border: none;
+    font-size: 1.25em;
+    font-family: Arial;
     border-radius: 7px;
 }
 #search-button {
@@ -44,6 +49,17 @@ hr {
     height: 2px;
     background-color: #ccc;
 }
+h2 {
+    font-family: "Amatic SC", Arial;
+    color: dodgerblue;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+#recipe-type {
+    font-family: arial;
+    padding: 5px;
+    font-size: 1.15em;
+}
 .recipe {
     border: 2px solid black;
     display: flex;
@@ -61,7 +77,37 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .social {
-    padding: 25px;
+    padding-bottom: 25px;
+}
+
+@media screen and (min-width: 620px) {
+    #description {
+        display: block;
+        font-family: arial;
+        font-weight: bold;
+    }
+    .recipe {
+        flex-direction: row;
+    }
+    .recipe-info {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+    }
+    #food-img {
+        max-width: 50%;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .social {
+        order: 1;
+        padding: 0px;
+    }
 }
