@@ -19,11 +19,12 @@ h1 {
 nav {
     padding-bottom: 15px;
     line-height: 2em;
+    display: flex;
+    flex-direction: column;
 }
 nav a {
     color: white;
     text-decoration: none;
-    padding-right: 25px;
 }
 nav a:hover {
     color: lightgray;
@@ -86,10 +87,13 @@ footer {
 footer h2 {
     padding: 25px;
 }
+footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 1.15em;
+}
 footer li {
-    padding-right: 10px;
-    padding-left: 10px;
-    display: inline;
     margin-bottom: 0;
 }
 footer a {
@@ -104,7 +108,7 @@ footer a:hover {
 
 @media screen and (min-width: 700px) {
     .hide {
-        display: block;
+        display: flex;
     }
     .menu-btn {
         display: none;
@@ -112,5 +116,15 @@ footer a:hover {
     main img {
         width: 500px;
         height: 500px;
+    }
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    footer ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 }
