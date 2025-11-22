@@ -23,6 +23,7 @@
     <title>Recipe Book</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="recipes.css">
+    <script src="recipes.js" defer></script>
 </head>
 <body>
     <main>
@@ -32,32 +33,13 @@
         </div>
         <div class="search">
             <input type="text" id="search-box" name="search-box" placeholder="Find a Recipe">
-            <button id="search-button" type="submit">
+            <button id="search-button">
                 <img id="search-img" src="images/search.svg" alt="magnifying glass">
             </button>
         </div>
         <hr>
-        <div class="recipe">
-            <img id="food-img" src="images/apple-crisp.jpg" alt="a picture of an apple crisp">
-            <div class="recipe-info">
-                <div>
-                    <button id="recipe-type">dessert</button>
-                </div>
-                <div id="recipe-description">
-                    <h2>APPLE CRISP</h2>
-                    <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">☆</span>
-                    </span>
-                    <p id="description">
-                        This apple crisp recipe is a simple yet delicious fall dessert that's great served warm 
-                        with vanilla ice cream.
-                    </p>
-                </div>
-            </div>
+        <div id="recipe-container">
+            
         </div>
     </main>
     <footer>
