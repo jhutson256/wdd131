@@ -20,7 +20,7 @@ body {
 h1, h2 {
     font-family: "Orbitron", "Oswald", Arial;
 }
-p, a {
+p, a, label, #background-select, #search-box {
     font-family: "Oswald", "Orbitron", Arial;
 }
 h2 {
@@ -87,7 +87,6 @@ nav {
     padding: 15px;
 }
 #background-select {
-    font-family: "Oswald", "Orbitron", Arial;
     margin-top: 15px;
 }
 #search {
@@ -99,7 +98,6 @@ nav {
 }
 #search-box {
     width: 100%;
-    font-family: "Oswald", "Orbitron", Arial;
     border: none;
     border-radius: 15px;
     margin-right: 2px;
