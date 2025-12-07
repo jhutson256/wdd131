@@ -7,7 +7,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Fightsaber">
     <meta property="og:description" content="A collection of lightsaber lore with an interactive lightsaber duel">
-    <meta property="og:url" content="https://jhutson256.github.io/wdd131/fightsaber/">
+    <meta property="og:url" content="https://jhutson256.github.io/wdd131/fightsaber/duel.html">
     <meta property="og:image" content="https://jhutson256.github.io/wdd131/fightsaber/images/social-media-preview.png">
     <!-- X Card -->
     <meta name="twitter:card" content="Social Preview Image">
@@ -18,9 +18,9 @@
     <link rel="icon" href="images/favicons/favicon.ico">
     <!-- One Apple Touch Icon (iOS home screen) -->
     <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
-    <title>Fightsaber | Home</title>
+    <title>Fightsaber | Duel</title>
     <meta name="author" content="Jacob Hutson">
-    <meta name="description" content="A website for lightsaber lore">
+    <meta name="description" content="A website with an interactive lightsaber duel activity">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="styles/fightsaber.css">
     <script src="fightsaber.js" defer></script>
@@ -37,21 +37,16 @@
             </div>
         </nav>
     </header>
-    <main id="home-main">
-        <div id="home-h1">
-            <img id="h1-img" src="images/logo.png" alt="A red and a blue lightsaber forming an x">
-            <h1>Fightsaber</h1>
-        </div>
-        <div id="welcome-div">
-            <h2>Welcome!</h2>
+    <main >
+        <div id="duel-h1">
+            <h1>Lightsaber Duel!</h1>
             <p>
-                Jedi padawans and Sith apprentices alike, welcome to Fightsaber! Here you will find lore on all of 
-				the different parts of a lightsaber, and each part's different variations. Whether you are looking 
-				to construct your own lightsaber, or just interested in learning more about lightsabers, this is the 
-				website for you! This website also features a simple, but fun and interactive lightsaber duel you 
-				can take part in! As you browse the lore of lightsabers, you can change the background image to the 
-				one the force calls you to pick. You can pick between 4 different background images in the drop down 
-				menu below.
+                A challenger has approached you and challenged you to a duel! You must follow the force as you 
+				choose whether to follow the path of the Jedi or the path of the Sith. With the Jedi, you can use 
+				the force to heal yourself and can attack your opponent with your lightsaber. With the Sith, you 
+				can use the power of the dark side to attack your opponent with a force choke or force lightning, 
+				and you can attack your oppenent with your lightsaber. You can also pick your battle ground using 
+				the drop down menu below!
             </p>
             <select id="background-select">
                 <option value="">-- Select a Background --</option>
@@ -61,14 +56,27 @@
                 <option value="sith-lair">Sith Lair</option>
             </select>
         </div>
-        <div id="search">
-            <input type="text" id="search-box" name="search-box" placeholder="Search Lightsaber Lore">
-            <button id="search-button">
-                <img id="search-img" src="images/search.svg" alt="magnifying glass">
-            </button>
-        </div>
-        <div id="lore-container">
-
+        <div id="character-cards">
+            <div id="jedi-card">
+                <img id="jedi" src="images/lightsaber-weilder-blue.jpg" alt="An A.I. image of a Jedi">
+                <div id="jedi-stats">
+                    <h2 id="jedi-name">Jedi</h2>
+                    <p><span class="bold">Health:</span> <span id="jedi-health"></span></p>
+                </div>
+                <button id="force-heal">Force Heal</button>
+                <button id="force-push">Force Push</button>
+                <button id="jedi-attack">Lightsaber Attack</button>
+            </div>
+            <div id="sith-card">
+                <img id="sith" src="images/lightsaber-wielder-red.jpg" alt="An A.I. image of a Sith">
+                <div id="sith-stats">
+                    <h2 id="sith">Sith</h2>
+                    <p><span class="bold">Health:</span> <span id="sith-health"></span></p>
+                </div>
+                <button id="force-lightning">Force Lightning</button>
+                <button id="force-choke">Force Choke</button>
+                <button id="sith-attack">Lightsaber Attack</button>
+            </div>
         </div>
     </main>
     <footer>
