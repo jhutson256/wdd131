@@ -79,11 +79,13 @@ let background = document.querySelector("body");
 let randomBackground = Math.floor(Math.random() * backgroundImages.length);
 const backgroundImg = backgroundImages[randomBackground];
 
+selectBackground.setAttribute("aria-expanded", "false");
 selectBackground.addEventListener("change", changeBackground);
 document.body.style.backgroundImage = `url("${backgroundImg}")`;
 
 function changeBackground() {
     let current = selectBackground.value;
+
     if (current === "city") {
         document.body.style.backgroundImage = `url("${backgroundImages[0]}")`;
     } else if (current === "forest") {
@@ -95,6 +97,8 @@ function changeBackground() {
     } else {
         document.body.style.backgroundImage = `url("${backgroundImg}")`;
     }
+
+    selectBackground.setAttribute("aria-expanded", "true");
 }
 
 const jediHealth = document.querySelector("#jedi-health");
