@@ -221,9 +221,34 @@ function search() {
         );
     });
 
+    let relevantLore = filteredLore.map(function(lore) {
+        relevancePoints = 0;
+
+        if (lore.heading.toLowerCase().includes(loreQuery.toLowerCase())) {
+            relevancePoints += 5;
+        }
+
+        else if (lore.description.toLowerCase().includes(loreQuery.toLowerCase())) {
+            relevancePoints += 2;
+        }
+
+        return{...lore, relevancePoints};
+    });
+
+    let sortedLore = relevantLore.sort(compareLore);
+
+    function compareLore(a,b) {
+        if (a.relevancePoints > b.relevancePoints) {
+        return -1;
+        } else if (a.relevancePoints < b.relevancePoints) {
+            return 1;
+        }
+        return 0;
+    }
+
     loreContainer.innerHTML = "";
 
-    filteredLore.forEach(function(lore) {
+    sortedLore.forEach(function(lore) {
         renderLore(lore);
     });
 }
