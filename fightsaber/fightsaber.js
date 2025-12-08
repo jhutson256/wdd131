@@ -37,13 +37,13 @@ const lightsabers = [
     },
     {
         heading: "Standard Lightsaber Hilts",
-        imgSrc: "images/standard.png",
+        imgSrc: "images/standard.jpg",
         imgAlt: "standard lightsaber hilt",
         description: "These lightsaber hilts are the standard type of lightsaber hilt. While each lightsaber hilt is constructed uniquely by the Jedi or Sith, these are the universal standard for lightsaber hlits."
     },
     {
         heading: "Curved Lightsaber Hilts",
-        imgSrc: "images/curved.png",
+        imgSrc: "images/curved.jpg",
         imgAlt: "curved lightsaber hilt",
         description: "The curved lightsaber hilts are unique compared to standard lightsaber hilts due to the fact that the hilt is slightly curved at the bottom of the hilt to benefit the wielder in lightsaber dueling. The curved hilt provides more precision in dueling and makes it easier to perform thrust attacks with the lightsaber. The most common wielders of the curved hilt lightsaber use form 2, Makashi, due to the form's emphasis in lightsaber dueling and precise lightsaber strikes."
     },
@@ -55,13 +55,13 @@ const lightsabers = [
     },
     {
         heading: "Staff Lightsaber Hilts",
-        imgSrc: "images/staff.png",
+        imgSrc: "images/staff.jpg",
         imgAlt: "lightsaber staff",
         description: "The lightsaber staff is a uniquely long lightsaber hilt. The reason for the hilt's excess length is because the hilt actually contains 2 kyber crystals meaning that lightsaber staffs are double bladed, with a lightsaber blade coming out of both ends of the staff. This allows for more versatility because the staffs often act as two seperate lightsabers combined into one. This means that if the staff is cut in half, the lightsaber can still work. Additionally, some staffs allow the wielder to seperate the staff into two seperate lightsabers, and allow the wielder to control whether to ignite either one or both blades of the staff."
     },
     {
         heading: "Kyber Crystals",
-        imgSrc: "images/kyber-crystals.png",
+        imgSrc: "images/kyber-crystals.jpg",
         imgAlt: "multiple kyber crystals of different colors",
         description: "Kyber crystals act as the battery or the power source of the lightsaber. Without the kyber crystal, the lightsaber would simply be a useless hilt. Kyber crystals are also what give the lightsaber itscolor with the exception of red and grey lightsabers. There are different kinds of kyber crystals in the Star Wars universe. The most common way to get a kyber crystal is to find a naturally grown kyber crystal. Very few planets have naturally growing kyber crystals, so another kyber crystal that Jedi and Sith use are synthetic kyber crystals. These synthetic kyber crystals are man made and are essentially the same as natural kyber crystals. Kyber crystals also form strong bonds with their wielders through the force, which is why a lightsaber and its kyber crystal are such personal items to its wielder."
     }
