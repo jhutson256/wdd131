@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oswald:wght@200..700&display=swap");
+@font-face {
+    font-family: "Orbitron";
+    src: url("Orbitron/Orbitron-VariableFont_wght.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Oswald";
+    src: url("Oswald/Oswald-VariableFont_wght.ttf") format('truetype');
+}
 
 * {
     margin: 0;
