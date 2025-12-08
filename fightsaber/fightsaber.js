@@ -69,7 +69,7 @@ const lightsabers = [
 
 const backgroundImages = [
     "images/city.jpg",
-    "images/forest.jpeg",
+    "images/forest.jpg",
     "images/lava.jpg",
     "images/sith-lair.jpg"
 ];

@@ -1,10 +1,12 @@
 @font-face {
     font-family: "Orbitron";
     src: url("Orbitron/Orbitron-VariableFont_wght.ttf") format('truetype');
+    font-display: swap;
 }
 @font-face {
     font-family: "Oswald";
     src: url("Oswald/Oswald-VariableFont_wght.ttf") format('truetype');
+    font-display: swap;
 }
 
 * {
