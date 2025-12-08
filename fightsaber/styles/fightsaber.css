@@ -127,7 +127,6 @@ nav {
     max-width: 1000px;
     margin: 0 auto;
     margin-top: 25px;
-    margin-bottom: 25px;
 }
 #duel-h1 h1 {
     margin-top: 0px;
@@ -161,7 +160,7 @@ nav {
     text-align: center;
 }
 #force-heal, #force-push, #jedi-attack, #force-lightning, #force-choke, #sith-attack {
-    width: 50%;
+    width: 75%;
     font-family: "Oswald", "Orbitron", Arial;
     background-color: white;
     margin-bottom: 5px;
@@ -221,5 +220,8 @@ footer {
     #jedi-card, #sith-card {
         width: 20%;
         margin: 100px;
+    }
+    #force-heal, #force-push, #jedi-attack, #force-lightning, #force-choke, #sith-attack {
+        width: 50%;
     }
 }
