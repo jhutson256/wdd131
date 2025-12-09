@@ -189,9 +189,6 @@ footer {
     display: flex;
     align-items: center;
 }
-#copyright {
-    margin-left: 30px;
-}
 #socials a {
     text-decoration: none;
 }
@@ -226,5 +223,8 @@ footer {
     }
     #force-heal, #force-push, #jedi-attack, #force-lightning, #force-choke, #sith-attack {
         width: 50%;
+    }
+    #copyright {
+        margin-left: 30px;
     }
 }

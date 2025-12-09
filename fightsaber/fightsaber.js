@@ -220,7 +220,7 @@ button.addEventListener("click", search);
 
 document.querySelector("#search").addEventListener("submit", function(event) {
     event.preventDefault();
-})
+});
 
 function search() {
     let loreQuery = document.querySelector("#search-box").value;
